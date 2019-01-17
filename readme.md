@@ -34,3 +34,7 @@
 
 - 还没学会怎么用，正常的格式代码是先选中代码，然后按‘Ctrl+K Ctrl+F’；
 - 不过也可以使用默认的快捷键‘Shift+Alt+F’；
+
+### Setting Sync
+
+- f86cda8f825d0ec3562d4e3f095d211b7abf44f0
