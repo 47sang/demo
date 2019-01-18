@@ -1,20 +1,321 @@
-<!doctype html>
-<html lang="zh-cn">
+<!DOCTYPE html>
+<html lang="zh-CN">
   <head>
     <title>hello bootstrap</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-      <h1>Hello word</h1>
+    <div class="container">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownId"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Dropdown</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">首页</a></li>
+        <li class="breadcrumb-item"><a href="#">Git教程</a></li>
+        <li class="breadcrumb-item active">正文</li>
+      </ol>
+
+      <div class="container-fluid">
+        <h1>Hello Bootstrap</h1>
+        <h5>Hello Bootstrap</h5>
+        <h2>Hello Bootstrap</h2>
+        <h3>Hello Bootstrap</h3>
+        <h4>Hello Bootstrap</h4>
+        <h6>Hello Bootstrap</h6>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-3">Fluid jumbo heading</h1>
+            <p class="lead">Jumbo helper text</p>
+            <hr class="my-2" />
+            <p>More info</p>
+            <p class="lead">
+              <a
+                class="btn btn-primary btn-lg"
+                href="Jumbo action link"
+                role="button"
+                >Jumbo action name</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="jumbotron">
+          <h1 class="display-3">Jumbo heading</h1>
+          <p class="lead">Jumbo helper text</p>
+          <hr class="my-2" />
+          <p>More info</p>
+          <p class="lead">
+            <a
+              class="btn btn-primary btn-lg"
+              href="Jumbo action link"
+              role="button"
+              >Jumbo action name</a
+            >
+          </p>
+        </div>
+        <p>
+          Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. Nullam id dolor id nibh ultricies vehicula.
+        </p>
+        <p class="lead">
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor
+          fringilla.
+        </p>
+        <p class="lead">
+          variables.less 文件中定义的两个 Less
+          变量决定了排版尺寸：@font-size-base 和
+          @line-height-base。第一个变量定义了全局 font-size 基准，第二个变量是
+          line-height
+          基准。我们使用这些变量和一些简单的公式计算出其它所有页面元素的
+          margin、 padding 和 line-height。自定义这些变量即可改变 Bootstrap
+          的默认样式。
+        </p>
+        <pre class="pre-scrollable">
+          variables.less 文件中定义的两个 Less
+          变量决定了排版尺寸：@font-size-base 和
+          @line-height-base。第一个变量定义了全局 font-size 基准，第二个变量是
+          line-height
+          基准。我们使用这些变量和一些简单的公式计算出其它所有页面元素的
+          margin、 padding 和 line-height。自定义这些变量即可改变 Bootstrap
+          的默认样式。
+          variables.less 文件中定义的两个 Less
+          变量决定了排版尺寸：@font-size-base 和
+          @line-height-base。第一个变量定义了全局 font-size 基准，第二个变量是
+          line-height
+          基准。我们使用这些变量和一些简单的公式计算出其它所有页面元素的
+          margin、 padding 和 line-height。自定义这些变量即可改变 Bootstrap
+          的默认样式。
+          variables.less 文件中定义的两个 Less
+          变量决定了排版尺寸：@font-size-base 和
+          @line-height-base。第一个变量定义了全局 font-size 基准，第二个变量是
+          line-height
+          基准。我们使用这些变量和一些简单的公式计算出其它所有页面元素的
+          margin、 padding 和 line-height。自定义这些变量即可改变 Bootstrap
+          的默认样式。
+          variables.less 文件中定义的两个 Less
+          变量决定了排版尺寸：@font-size-base 和
+          @line-height-base。第一个变量定义了全局 font-size 基准，第二个变量是
+          line-height
+          基准。我们使用这些变量和一些简单的公式计算出其它所有页面元素的
+          margin、 padding 和 line-height。自定义这些变量即可改变 Bootstrap
+          的默认样式。
+        </pre>
+        <p>
+          Maecenas sed diam <mark> risus varius blandit</mark> sit amet non
+          magna. Donec id elit non mi porta gravida at eget metus. Duis mollis,
+          est non <kbd>Ctrl + ALT + K</kbd> luctus, nisi erat
+          <em>porttitor ligula</em>, eget lacinia odio sem nec elit.
+        </p>
+        <samp>good js</samp>
+        <p class="text-right">2019年1月18日 13:39:33</p>
+      </div>
+      <div class="card-columns">
+        <div class="card">
+          <img class="card-img-top" src="holder.js/100x180/" alt="" />
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="holder.js/100x180/" alt="" />
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+          </div>
+        </div>
+        <div class="card text-left">
+          <img class="card-img-top" src="holder.js/100px180/" alt="" />
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Body</p>
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li><a href="#">如果说你是我的DJ，你会爱我吗</a></li>
+        <li><a href="#">如果说你是我的DJ，你会爱我吗</a></li>
+        <li><a href="#">如果说你是我的DJ，你会爱我吗</a></li>
+        <li><a href="#">如果说你是我的DJ，你会爱我吗</a></li>
+        <ul>
+          <li><a href="#">嗯哼</a></li>
+          <li><a href="#">嗯哼</a></li>
+          <li><a href="#">嗯哼</a></li>
+          <li><a href="#">嗯哼</a></li>
+        </ul>
+        <li><a href="#">如果说你是我的DJ，你会爱我吗</a></li>
+      </ul>
+      <ol class="">
+        <li><a href="#">如果说你是我的DJ，你会爱我吗</a></li>
+        <li><a href="#">如果说你是我的DJ，你会爱我吗</a></li>
+        <li><a href="#">如果说你是我的DJ，你会爱我吗</a></li>
+        <li><a href="#">如果说你是我的DJ，你会爱我吗</a></li>
+        <ol>
+          <li><a href="#">嗯哼</a></li>
+          <li><a href="#">嗯哼</a></li>
+          <li><a href="#">嗯哼</a></li>
+          <li><a href="#">嗯哼</a></li>
+        </ol>
+        <li><a href="#">如果说你是我的DJ，你会爱我吗</a></li>
+      </ol>
+
+      <dl class="dl-horizontal">
+        <dt>这是标题</dt>
+        <dd>这是一段描述文字</dd>
+        <dt>这是标题w2</dt>
+        <dd>这是一段描述文字w2</dd>
+      </dl>
+
+      <table class="table table-striped table-hover table-inverse table-border">
+        <thead class="thead-inverse">
+          <tr>
+            <th>one</th>
+            <th>two</th>
+            <th>three</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">emmm</td>
+            <td>222</td>
+            <td>333</td>
+          </tr>
+          <tr>
+            <td scope="row">hahah</td>
+            <td>23</td>
+            <td>12</td>
+          </tr>
+        </tbody>
+      </table>
+      <img
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1547801728466&di=fed538ca5854b777341f2d05cd079efd&imgtype=0&src=http%3A%2F%2Fscimg.jb51.net%2Fallimg%2F170109%2F106-1F109120J9646.jpg"
+        class="img-thumbnail ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+        alt=""
+      />
+      <div class="form-group">
+        <label for=""></label>
+        <input
+          type="text"
+          name=""
+          id=""
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+        <small id="helpId" class="text-muted">Help text</small>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name=""
+            id=""
+            value="checkedValue"
+            checked
+          />
+          Display value
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="">hehe</label>
+        <input
+          type="text"
+          name=""
+          id=""
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+        <small id="helpId" class="text-muted">Help text</small>
+      </div>
+      <div class="card">
+        <div class="card-header">Top10精选网</div>
+        <div class="card-body">
+          <h4 class="card-title">友情链接:</h4>
+          <p class="card-text"><a href="#">咖喱给给网</a></p>
+        </div>
+        <div class="card-footer text-muted text-center">Copyright © Top10精选网 | 京ICP备11008151号</div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
