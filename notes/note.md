@@ -6,5 +6,5 @@
 
 # git setting
 
-- git config --global user.email "you@example.com"
-- git config --global user.name "Your Name"
+git config --global user.email "zhoushiyu92@gmail.com"
+git config --global user.name "47sang"
