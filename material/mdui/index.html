@@ -4,31 +4,196 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Hello MDUI</title>
+    <title>Top10精选网</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="mdui.css" />
-    <script src="mdui.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="mdui.css" />
+    <script src="mdui.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.2/css/mdui.min.css">
+    <script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.2/js/mdui.min.js"></script>
 </head>
 
-<body class="mdui-theme-accent-red">
+<body class="mdui-theme-layout-dark mdui-drawer-body-left">
+    <div class="mdui-container-fluid">
+        <div class="mdui-appbar mdui-color-theme">
+            <div class="mdui-toolbar">
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">menu</i></a>
 
-    <div class="mdui-container">
-        <div class="mdui-appbar">
-            <div class="mdui-toolbar mdui-color-theme">
-                <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
-                <a href="javascript:;" class="mdui-typo-headline">MDUI</a>
-                <a href="javascript:;" class="mdui-typo-title">Title</a>
+                <a href="javascript:;" class="mdui-typo-headline">Top10精选网</a>
+                <a href="javascript:;" class="mdui-typo-title">Git教程</a>
                 <div class="mdui-toolbar-spacer"></div>
                 <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
                 <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
                 <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
             </div>
+
+
+            <div class="mdui-drawer" id="left-drawer">
+                <ul class="mdui-list">
+                    <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">move_to_inbox</i>
+                        <div class="mdui-list-item-content">Inbox</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
+                        <div class="mdui-list-item-content">Outbox</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">delete</i>
+                        <div class="mdui-list-item-content">Trash</div>
+                    </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">error</i>
+                        <div class="mdui-list-item-content">Spam</div>
+                    </li>
+                </ul>
+                <button class="mdui-btn" mdui-drawer-close>close</button>
+            </div>
+        </div>
+        <div class="mdui-progress mdui-spinner-colorful">
+            <div class="mdui-progress-indeterminate mdui-color-yellow"></div>
+            
         </div>
 
-        <div class="mdui-typo">
-            <h1>Hello mdui</h1>
+        <div class="mdui-tab mdui-color-theme mdui-tab-full-width" mdui-tab>
+            <a href="#example1-tab1" class="mdui-ripple">web</a>
+            <a href="#example1-tab2" class="mdui-ripple">shopping</a>
+            <a href="#example1-tab3" class="mdui-ripple">images</a>
         </div>
-    </div>
+        <div id="example1-tab1" class="mdui-p-a-2">
+            <ul class="mdui-list mdui-col-xs-4">
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-list-item-title mdui-list-item-one-line">Multiline item</div>
+                        <div class="mdui-list-item-text mdui-list-item-two-line">You've got to get enough sleep. Other
+                            travelling salesmen live a life of luxury. You've got to get enough sleep. Other travelling
+                            salesmen live a life of luxury.</div>
+                    </div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">
+                        <div class="mdui-list-item-title mdui-list-item-one-line">Multiline item</div>
+                        <div class="mdui-list-item-text mdui-list-item-two-line">You've got to get enough sleep. Other
+                            travelling salesmen live a life of luxury. You've got to get enough sleep. Other travelling
+                            salesmen live a life of luxury.</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="mdui-grid-tile">
+                <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=590796867,28152225&fm=26&gp=0.jpg" />
+                <div class="mdui-grid-tile-actions">
+                    <div class="mdui-grid-tile-text">
+                        <div class="mdui-grid-tile-title">Halcyon Days</div>
+                        <div class="mdui-grid-tile-subtitle"><i class="mdui-icon material-icons">grid_on</i>Ellie
+                            Goulding</div>
+                    </div>
+                    <div class="mdui-grid-tile-buttons">
+                        <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">star_border</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="example1-tab2" class="mdui-p-a-2">shopping content</div>
+        <div id="example1-tab3" class="mdui-p-a-2">images content</div>
+
+        <div class="mdui-typo mdui-m-a-1 mdui-clearfix">
+            <div class="mdui-col-xs-4">
+                <p>小说，以刻画人物形象为<kbd> K + O </kbd>中心，通过完整的故事情节和环境描写来反映社会生活的文学体裁。人物、情节、环境是小说的三要素。情节一般包括开端、发展、高潮、结局四部分，有的包括序幕、尾声。环境包括自然环境和社会环境。小说按照篇幅及容量可分为长篇、中篇、短篇和微型小说（小小说）。按照表现的内..</p>
+
+            </div>
+            <div class="mdui-col-xs-4">
+                <p>小说，以刻画人物形象为中心，通过完整的故事情节和环境描写来反映社会生活的文学体裁。人物、情节、环境是小说的三要素。情节一般包括开端、发展、高潮、结局四部分，有的包括序幕、尾声。环境包括自然环境和社会环境。小说按照篇幅及容量可分为长篇、中篇、短篇和微型小说（小小说）。按照表现的内..</p>
+
+            </div>
+            <div class="mdui-col-xs-4">
+                <p>小说，以刻画人物形象为中心，通过完整的故事情节和环境描写来反映社会生活的文学体裁。人物、情节、环境是小说的三要素。情节一般包括开端、发展、高潮、结局四部分，有的包括序幕、尾声。环境包括自然环境和社会环境。小说按照篇幅及容量可分为长篇、中篇、短篇和微型小说（小小说）。按照表现的内..</p>
+
+            </div>
+
+        </div>
+        <div class="mdui-typo">
+            <blockquote class="mdui-ripple">
+                <p>无论走到哪里，都应该记住，过去都是假的，回忆是一条没有尽头的路，一切以往的春天都不复存在，就连那最坚韧而又狂乱的爱情归根结底也不过是一种转瞬即逝的现实。</p>
+                <footer>马尔克斯 ——《百年孤独》</footer>
+            </blockquote>
+        </div>
+        <div class="mdui-panel" mdui-panel>
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    <div class="mdui-panel-item-title">Trip name</div>
+                    <div class="mdui-panel-item-summary">Carribean cruise</div>
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>First content</p>
+                    <p>First content</p>
+                    <p>First content</p>
+                    <p>First content</p>
+                    <p>First content</p>
+                    <p>First content</p>
+                    <div class="mdui-panel-item-actions">
+                        <button class="mdui-btn mdui-ripple" mdui-panel-item-close>cancel</button>
+                        <button class="mdui-btn mdui-ripple">save</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    <div class="mdui-panel-item-title">Location</div>
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>Second content</p>
+                    <p>Second content</p>
+                    <p>Second content</p>
+                    <p>Second content</p>
+                    <p>Second content</p>
+                    <p>Second content</p>
+                    <div class="mdui-panel-item-actions">
+                        <button class="mdui-btn mdui-ripple" mdui-panel-item-close>cancel</button>
+                        <button class="mdui-btn mdui-ripple">save</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    <div class="mdui-panel-item-title">Start and end dates</div>
+                    <div class="mdui-panel-item-summary">Start date: Feb 29, 2016</div>
+                    <div class="mdui-panel-item-summary">End date: Not set</div>
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>Third content</p>
+                    <p>Third content</p>
+                    <p>Third content</p>
+                    <p>Third content</p>
+                    <p>Third content</p>
+                    <p>Third content</p>
+                    <div class="mdui-panel-item-actions">
+                        <button class="mdui-btn mdui-ripple" mdui-panel-item-close>cancel</button>
+                        <button class="mdui-btn mdui-ripple">save</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mdui-valign">
+            <i class="mdui-icon material-icons">check_box</i>
+            <i class="mdui-icon material-icons mdui-text-color-theme">add_to_queue</i>
+            <i class="mdui-icon material-icons mdui-text-color-theme">share</i>
+            <button class="mdui-btn mdui-color-yellow mdui-ripple"><i class="mdui-icon mdui-icon-right material-icons">share</i>
+                Share</button>
+            <button class="mdui-btn mdui-color-yellow mdui-ripple"><i class="mdui-icon mdui-icon-left material-icons">share</i>
+                Share</button>
+        </div>
+        <div class="mdui-fab-fixed mdui-right">
+            <button class="mdui-btn mdui-btn-icon mdui-color-theme-accent mdui-ripple">
+                <i class="mdui-icon material-icons">vertical_align_top</i>
+            </button>
+        </div>
 </body>
 
 </html>
